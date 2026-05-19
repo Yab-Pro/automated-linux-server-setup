@@ -1,24 +1,38 @@
 # Automated Linux Server Setup
 
-This project is focused on automating Linux server setup using Bash and Python.
+This project automates the setup of a Linux server using Bash scripts.
 
-## Current Goals
-- Automate Nginx installation
-- Automate PostgreSQL installation
-- Automate Docker installation
-- Learn Linux administration fundamentals
-- Practice infrastructure automation
+It is built as a hands-on learning project to develop practical skills in Linux system administration, infrastructure automation, and DevOps fundamentals.
 
-## Technologies
-- Bash
-- Python
-- Linux
-- Docker
-- PostgreSQL
-- Nginx
+---
 
-## Project Status
-Project started — currently building the initial setup scripts and learning infrastructure fundamentals step by step.
+## What This Project Does
 
-## Motivation
-After shifting toward a more practical IT learning path, I started building this project to strengthen my Linux, automation, and system integration skills through hands-on work.
+This project automates the installation and setup of:
+
+- Nginx (web server)
+- Docker (container platform)
+
+A master script is also provided to run the full setup automatically.
+
+---
+
+## Project Structure
+
+scripts/
+- install_nginx.sh → Installs and configures Nginx
+- install_docker.sh → Installs Docker and dependencies
+- setup_all.sh → Runs full system setup automatically
+
+logs/ → (planned) system logs  
+docs/ → (planned) documentation  
+screenshots/ → (planned) visual proof of execution  
+
+---
+
+## How to Use
+
+Run the full setup:
+
+```bash
+bash scripts/setup_all.sh
